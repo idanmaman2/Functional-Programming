@@ -4,9 +4,6 @@ def listinlist(type , arr  ):
         for j in i :
              arr2.append(j)
     return type(arr2)
-
-
-
 def tolist(arr:list):
     return listinlist(list,[i for i in arr if (type(i) == tuple) ])
 def totuple(arr:list): 

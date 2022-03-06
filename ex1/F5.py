@@ -6,9 +6,6 @@ def shiftCL(bin:str , n :int ):
     return ( bin.ljust(n+len(bin),"0")[0:n] + bin.ljust(n+len(bin),"0")[2*n:len(bin)+n])[::-1]
 def shiftCR(bin:str , n :int ): 
     return  (bin[:len(bin)- n ** 2 ] + bin[len(bin)-n**2 : len(bin)-n] +  bin [len(bin) - n : ] ) [::-1] 
-
-
-
 def main():
     print(shiftL("110001110",2))
     print(shiftR("110001110",2))
